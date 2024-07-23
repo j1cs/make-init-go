@@ -11,13 +11,31 @@ To get started, you need to have the following installed:
 - Go 1.22.0
 - GNU Make latest
 
-Once you have those installed, you can run the following command to get started:
+### Watch
+To run the debugger and the watcher, you can run the following command:
 
+```bash
+make watch
+```
+
+## Other options
+
+### Run
 ```bash
 make run
 ```
 
 This will create a new directory called `bin` to run the project.
+
+### Debug
+If you want to debug the project, you can run the following command:
+
+```bash
+make debug
+```
+
+Remeber to configure your IDE to use the `dlv` debugger.
+
 
 ## Extras
 We reload the project on every change (only go files), so you can just run `make debug` or `make watch` and start coding.
